@@ -1,0 +1,10 @@
+E:\daominhan\Dao Minh An\BanGiayNam\bin\BanGiayNam.dll.config
+E:\daominhan\Dao Minh An\BanGiayNam\bin\BanGiayNam.dll
+E:\daominhan\Dao Minh An\BanGiayNam\bin\BanGiayNam.pdb
+E:\daominhan\Dao Minh An\BanGiayNam\bin\EntityFramework.dll
+E:\daominhan\Dao Minh An\BanGiayNam\bin\EntityFramework.SqlServer.dll
+E:\daominhan\Dao Minh An\BanGiayNam\bin\EntityFramework.xml
+E:\daominhan\Dao Minh An\BanGiayNam\bin\EntityFramework.SqlServer.xml
+E:\daominhan\Dao Minh An\BanGiayNam\obj\Debug\BanGiayNam.csprojResolveAssemblyReference.cache
+E:\daominhan\Dao Minh An\BanGiayNam\obj\Debug\BanGiayNam.dll
+E:\daominhan\Dao Minh An\BanGiayNam\obj\Debug\BanGiayNam.pdb

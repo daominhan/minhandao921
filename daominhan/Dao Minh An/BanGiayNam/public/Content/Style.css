@@ -1,0 +1,337 @@
+﻿body {
+    background-color:#ccc;
+}
+.topbar
+{
+	min-height: 30px;
+	background: #000;
+	color: #ffffff;
+	font-size:20px;
+}
+.bg-light {
+    background-color: #333 !important;
+
+}
+.logo
+{
+	height: 100px;
+	width: 100px;
+}
+.mainmenu
+{
+    padding:0;
+	min-height: 20px;
+	background: purple;
+	margin-bottom: 5px;
+}
+.menutop ul, .logincart ul
+{
+    padding: 0;
+    margin: 0;
+
+}
+.menutop ul li, .logincart ul li
+{
+    display:inline-block;
+}
+.menutop ul li a, .logincart ul li a
+{
+    display:block;
+    line-height:34px;
+    color:#ffffff;
+    padding: 0 12px;
+    text-decoration:none;
+}
+.logincart ul
+{
+    text-align:right;
+    font-size:20px;
+}
+.maincontent
+{
+	height: 300px;
+	width: 300px;
+}
+.content
+{
+	margin-top: 60px;
+	clear: both;
+}
+
+.product
+{	
+
+	border :1px;
+}
+
+.footer
+{
+	min-height: 50px;
+	background: purple;
+	color: #ffffff;
+
+}
+.copyright
+{
+	min-height: 20px;
+	background:#000;
+	color: #ffffff;
+	
+}
+.mk-product-item
+{
+    border: 1px solid #ffd800;
+    min-height:300px;
+    margin-bottom:15px;
+    background-color:yellow;
+   
+}
+.inner
+{
+    margin:0 auto;
+    width:980px;
+    text-align: center;
+}
+.submenu {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 15px;
+    line-height: 1.4;
+}
+.footer-copyright {
+    text-align: center;
+    padding: 0 0 20px;
+}
+.product {
+    margin: 10px auto 20px auto;
+    width: 1000px;
+    overflow: hidden;
+}
+.product .title-home {
+    height: 48px;
+    background: #CDE0F7;
+    width: 995px;
+    margin-bottom: 25px;
+    font-family: "WebFontM",Arial, Helvetica, sans-serif;
+}
+.product .title-home span {
+    height: 48px;
+    width: 255px;
+    line-height: 48px;
+    background: blue;
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.product .deal {
+    width: 300px;
+    height: 440px;
+    overflow: hidden;
+    float: left;
+    margin: 0px 20px 20px 0;
+    border: 1px solid #ccc;
+    position: relative;
+    list-style: none;
+}
+.product .deal .img {
+    width: 317px;
+    height: 320px;
+    position: relative;
+}
+.product .deal a {
+    color: #4e4e4e;
+    font-weight: normal;
+    font-family: WebFontR;
+}
+.product .deal .img img {
+    width: 317px;
+    height: 320px;
+    background: images/loading.gif no-repeat center center;
+}
+.product .img .pcode {
+    position: absolute;
+    right: 16px;
+    top: 1px;
+    padding: 0px 4px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: WebFontM;
+}
+.deal .img .param {
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    padding: 0px 4px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: WebFontM;
+    width: 100%;
+    z-index: 1;
+}
+.priceinfo {
+    position: absolute;
+    display: block;
+    height: 125px;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(246, 247, 249, 0.76);
+    color: #000;
+    font-family: WebFontM;
+    font-size: 15px;
+    display: none;
+}
+.priceinfo span {
+    display: block;
+    line-height: 25px;
+    padding-left: 10px;
+}
+.priceinfo a.fastview {
+    float: right;
+    font-size: 15px;
+    color: #0e6adc !important;
+    width: auto;
+    height: auto;
+    padding: 1px 5px;
+    background: #fff;
+    border: 1px solid #0e6adc;
+    border-radius: 3px;
+    pointer-events: auto;
+    position: absolute;
+    top: 47px;
+    right: 15px;
+    font-family: WebFontM !important;
+}
+
+.product .deal .name {
+    font-size: 26px;
+    padding: 10px 10px 5px 10px;
+    height: 41px;
+    overflow: hidden;
+    line-height: 28px;
+    margin-bottom: 7px;
+    font-family: WebFontM;
+    font-weight: normal;
+    border-top: 1px solid #ccc;
+}   
+.product .deal .price2 {
+    color: #ff4200;
+    background: #e5effb;
+    font-size: 16px;
+    padding: 0px 0 0 5px;
+    font-family: WebFontM;
+    border-top: 1px solid #ced8e1;
+}
+.product .deal .price2 span {
+    color: #4e4e4e;
+}
+.product .deal .info {
+    height: 43px;
+    background: #e5effb;
+    font-family: RobotoR;
+    border-top: 1px solid #ced8e1;
+}
+.product .deal .info .price {
+    width: 50%;
+    font-size: 21px;
+    color: #ff4200;
+    float: left;
+    text-align: left;
+    border-right: 1px solid #ced8e1;
+    height: 100%;
+    padding: 0px 0 0 5px;
+    font-family: WebFontM;
+}
+}
+
+.product .deal .info .price span:first-child {
+    color: #4e4e4e;
+    font-size: 16px;
+}
+.product .deal .info .sum-buyer {
+    width: 50px;
+    font-size: 14px;
+    color: #8e8e8e;
+    float: left;
+    text-align: center;
+    padding-top: 2px;
+    border-right: 1px solid #ccc;
+}
+
+.product .deal .info .sum-buyer .text {
+    display: block;
+    width: 100%;
+    height: 2px;
+}
+.product .deal .dathang {
+    width: 94px;
+    height: 46px;
+    background:  no-repeat;
+    position: absolute;
+    bottom: -10px;
+    right: 2px;
+    cursor: pointer;
+
+}
+.view_all {
+    float: right;
+    color: #0e6adc;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-right: 20px;
+    font-size: 17px;
+    background: url(images/icon-v.png)7px 1px no-repeat;
+    padding-left: 45px;
+}
+
+
+/*tintuc*/
+.container {
+    clear: both;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+.panel-left {
+    margin: 0;
+    width: 210px;
+    float: left;
+}
+.panel-category-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #424242;
+    background: none;
+    padding: 7px 0px 7px 7px;
+    margin-top: 0;
+    border-radius: 0 0;
+    text-transform: uppercase;
+}
+.product-filter {
+    margin-bottom: 30px;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.product-filter-list ul {
+    list-style: none;
+    line-height: 2;
+}
+.filtermenu {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 14px;
+}
+div.product-filter-list li.filtermenu a {
+    padding: 3px 10px !important;
+}
+.filtermenu a {
+    color: #424242;
+    font-weight: 400;
+    text-decoration: none;
+}
