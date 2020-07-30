@@ -1,0 +1,7 @@
+﻿@model IEnumerable<Bangaubong.Models.Mcategory>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li style="list-style-type:none"><a href="~/san-pham/@item.Slug">@item.Name</a></li>
+    }
+</ul>

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Bangaubong.Models.Mmenu>
+<div class="container">
+    <nav class="navbar navbar-expand-lg">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                <ul class="navbar-nav">
+                    @{ int dem = 1;}
+                    @foreach (var item in Model)
+                    {
+                        if ( dem==1)
+                        {
+                            <li class="nav-item hovermau ">
+                                <a class="nav-link" style="color:#ffffff;width:150px" href="~/@item.Link">@item.Name<span class="sr-only">(current)</span></a>
+                            </li>
+                        }
+                        else
+                        {
+
+                        }
+
+                    }
+                   
+                 
+                    @*<li class="nav-item dropdown hovermau">
+                        <a class="nav-link dropdown-toggle" style="color:#ffffff;width:150px" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SẢN PHẨM
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" style="color:#0094ff" href="#">GẤU TEDDY</a>
+                            <a class="dropdown-item" style="color:#0094ff" href="#">NHÂN VẬT HOẠT HÌNH</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" style="color:#0094ff" href="#">PHỤ KIỆN</a>
+                            <a class="dropdown-item" style="color:#0094ff" href="#">TẤT CẢ SẢN PHẨM</a>
+
+                        </div>
+                    </li>*@
+                </ul>
+
+            
+        </div>
+    </nav>
+    </div>

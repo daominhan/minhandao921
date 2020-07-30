@@ -1,0 +1,105 @@
+﻿@model Bangaubong.Models.Mcategory
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<section class="clearfix">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-7">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb m-0 p-0"style="background-color:#f7f7f7">
+                                <li class="breadcrumb-item"><a href="~/admin">Bảng điều khiển</a></li>
+                                <li class="breadcrumb-item " aria-current="page"><a href="~/admin/category">Loại sản phẩm</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="">@Html.DisplayFor(model => model.Name)</a></ li >
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-md-5 text-right">
+                        <a class="btn btn-primary btn-sm" href="~/Admin/category/Create">Thêm mới</a>
+                        <a class="btn btn-danger btn-sm" href="">Thùng rác</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Slug)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ParentId)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Orders)
+                        </th>
+                       
+                        <th>
+                            @Html.DisplayNameFor(model => model.Created_at)
+                        </th>
+                        
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.Created_by)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Updated_at)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Updated_by)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Status)
+                        </th>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => model.Name)
+                        </td>
+                        <td>
+                           @Html.DisplayFor(model => model.Slug)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.ParentId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.Orders)
+                        </td>
+                       
+                        <td>
+                            @Html.DisplayFor(model => model.Created_at)
+                        </td>
+                       
+                        <td>
+                            @Html.DisplayFor(model => model.Created_by)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.Updated_at)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.Updated_by)
+                        </td>
+                        <td>
+                           @Html.DisplayFor(model => model.Status)
+                        </td>
+                       
+
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <div>
+            <h4>Loại sản phẩm</h4>
+            <hr />
+         
+        </div>
+    </div>
+</section>

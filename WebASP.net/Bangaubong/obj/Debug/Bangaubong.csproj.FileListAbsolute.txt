@@ -1,0 +1,220 @@
+G:\website\TranTrungTruc\Bangaubong\bin\ApplicationInsights.config
+G:\website\TranTrungTruc\Bangaubong\bin\roslyn\csc.exe
+G:\website\TranTrungTruc\Bangaubong\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\website\TranTrungTruc\Bangaubong\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\website\TranTrungTruc\Bangaubong\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\website\TranTrungTruc\Bangaubong\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\website\TranTrungTruc\Bangaubong\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\website\TranTrungTruc\Bangaubong\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\website\TranTrungTruc\Bangaubong\bin\roslyn\System.Collections.Immutable.dll
+G:\website\TranTrungTruc\Bangaubong\bin\roslyn\System.Reflection.Metadata.dll
+G:\website\TranTrungTruc\Bangaubong\bin\roslyn\vbc.exe
+G:\website\TranTrungTruc\Bangaubong\bin\roslyn\VBCSCompiler.exe
+G:\website\TranTrungTruc\Bangaubong\bin\roslyn\VBCSCompiler.exe.config
+G:\website\TranTrungTruc\Bangaubong\bin\Bangaubong.dll.config
+G:\website\TranTrungTruc\Bangaubong\bin\Bangaubong.dll
+G:\website\TranTrungTruc\Bangaubong\bin\Bangaubong.pdb
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.AI.Agent.Intercept.dll
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.AI.DependencyCollector.dll
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.AI.Web.dll
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.AI.WindowsServer.dll
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.ApplicationInsights.dll
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.Web.Infrastructure.dll
+G:\website\TranTrungTruc\Bangaubong\bin\System.Web.Helpers.dll
+G:\website\TranTrungTruc\Bangaubong\bin\System.Web.Mvc.dll
+G:\website\TranTrungTruc\Bangaubong\bin\System.Web.Razor.dll
+G:\website\TranTrungTruc\Bangaubong\bin\System.Web.Webpages.Deployment.dll
+G:\website\TranTrungTruc\Bangaubong\bin\System.Web.Webpages.dll
+G:\website\TranTrungTruc\Bangaubong\bin\System.Web.Webpages.Razor.dll
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.AI.DependencyCollector.xml
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.AI.Web.xml
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.AI.WindowsServer.xml
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.ApplicationInsights.xml
+G:\website\TranTrungTruc\Bangaubong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\website\TranTrungTruc\Bangaubong\bin\System.Web.Razor.xml
+G:\website\TranTrungTruc\Bangaubong\bin\System.Web.Webpages.xml
+G:\website\TranTrungTruc\Bangaubong\bin\System.Web.Webpages.Deployment.xml
+G:\website\TranTrungTruc\Bangaubong\bin\System.Web.Webpages.Razor.xml
+G:\website\TranTrungTruc\Bangaubong\bin\System.Web.Helpers.xml
+G:\website\TranTrungTruc\Bangaubong\bin\System.Web.Mvc.xml
+G:\website\TranTrungTruc\Bangaubong\obj\Debug\Bangaubong.dll
+G:\website\TranTrungTruc\Bangaubong\obj\Debug\Bangaubong.pdb
+G:\website\TranTrungTruc\Bangaubong\bin\EntityFramework.dll
+G:\website\TranTrungTruc\Bangaubong\bin\EntityFramework.SqlServer.dll
+G:\website\TranTrungTruc\Bangaubong\bin\EntityFramework.xml
+G:\website\TranTrungTruc\Bangaubong\bin\EntityFramework.SqlServer.xml
+G:\website\TranTrungTruc\Bangaubong\bin\PagedList.dll
+G:\website\TranTrungTruc\Bangaubong\bin\PagedList.Mvc.dll
+G:\website\TranTrungTruc\Bangaubong\bin\PagedList.xml
+G:\website\TranTrungTruc\Bangaubong\bin\PagedList.Mvc.xml
+G:\website\TranTrungTruc\Bangaubong\obj\Debug\Bangaubong.csprojResolveAssemblyReference.cache
+H:\TranTrungTruc\Bangaubong\bin\ApplicationInsights.config
+H:\TranTrungTruc\Bangaubong\bin\roslyn\csc.exe
+H:\TranTrungTruc\Bangaubong\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\TranTrungTruc\Bangaubong\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\TranTrungTruc\Bangaubong\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\TranTrungTruc\Bangaubong\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\TranTrungTruc\Bangaubong\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\TranTrungTruc\Bangaubong\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\TranTrungTruc\Bangaubong\bin\roslyn\System.Collections.Immutable.dll
+H:\TranTrungTruc\Bangaubong\bin\roslyn\System.Reflection.Metadata.dll
+H:\TranTrungTruc\Bangaubong\bin\roslyn\vbc.exe
+H:\TranTrungTruc\Bangaubong\bin\roslyn\VBCSCompiler.exe
+H:\TranTrungTruc\Bangaubong\bin\roslyn\VBCSCompiler.exe.config
+H:\TranTrungTruc\Bangaubong\bin\Bangaubong.dll.config
+H:\TranTrungTruc\Bangaubong\bin\Bangaubong.dll
+H:\TranTrungTruc\Bangaubong\bin\Bangaubong.pdb
+H:\TranTrungTruc\Bangaubong\bin\EntityFramework.dll
+H:\TranTrungTruc\Bangaubong\bin\EntityFramework.SqlServer.dll
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.AI.Agent.Intercept.dll
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.AI.DependencyCollector.dll
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.AI.Web.dll
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.AI.WindowsServer.dll
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.ApplicationInsights.dll
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.Web.Infrastructure.dll
+H:\TranTrungTruc\Bangaubong\bin\PagedList.dll
+H:\TranTrungTruc\Bangaubong\bin\PagedList.Mvc.dll
+H:\TranTrungTruc\Bangaubong\bin\System.Web.Helpers.dll
+H:\TranTrungTruc\Bangaubong\bin\System.Web.Mvc.dll
+H:\TranTrungTruc\Bangaubong\bin\System.Web.Razor.dll
+H:\TranTrungTruc\Bangaubong\bin\System.Web.Webpages.Deployment.dll
+H:\TranTrungTruc\Bangaubong\bin\System.Web.Webpages.dll
+H:\TranTrungTruc\Bangaubong\bin\System.Web.Webpages.Razor.dll
+H:\TranTrungTruc\Bangaubong\bin\EntityFramework.xml
+H:\TranTrungTruc\Bangaubong\bin\EntityFramework.SqlServer.xml
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.AI.DependencyCollector.xml
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.AI.Web.xml
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.AI.WindowsServer.xml
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.ApplicationInsights.xml
+H:\TranTrungTruc\Bangaubong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\TranTrungTruc\Bangaubong\bin\PagedList.xml
+H:\TranTrungTruc\Bangaubong\bin\PagedList.Mvc.xml
+H:\TranTrungTruc\Bangaubong\bin\System.Web.Razor.xml
+H:\TranTrungTruc\Bangaubong\bin\System.Web.Webpages.xml
+H:\TranTrungTruc\Bangaubong\bin\System.Web.Webpages.Deployment.xml
+H:\TranTrungTruc\Bangaubong\bin\System.Web.Webpages.Razor.xml
+H:\TranTrungTruc\Bangaubong\bin\System.Web.Helpers.xml
+H:\TranTrungTruc\Bangaubong\bin\System.Web.Mvc.xml
+H:\TranTrungTruc\Bangaubong\obj\Debug\Bangaubong.csprojResolveAssemblyReference.cache
+H:\TranTrungTruc\Bangaubong\obj\Debug\Bangaubong.dll
+H:\TranTrungTruc\Bangaubong\obj\Debug\Bangaubong.pdb
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\ApplicationInsights.config
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\roslyn\csc.exe
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\roslyn\vbc.exe
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\roslyn\VBCSCompiler.exe
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Bangaubong.dll.config
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Bangaubong.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Bangaubong.pdb
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\EntityFramework.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\EntityFramework.SqlServer.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.AI.Web.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\PagedList.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\PagedList.Mvc.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\System.Web.Helpers.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\System.Web.Mvc.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\System.Web.Razor.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\System.Web.Webpages.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\System.Web.Webpages.Razor.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\EntityFramework.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\EntityFramework.SqlServer.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.AI.Web.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\PagedList.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\PagedList.Mvc.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\System.Web.Razor.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\System.Web.Webpages.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\System.Web.Webpages.Razor.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\System.Web.Helpers.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\bin\System.Web.Mvc.xml
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\obj\Debug\Bangaubong.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\obj\Debug\Bangaubong.csproj.CopyComplete
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\obj\Debug\Bangaubong.dll
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\obj\Debug\Bangaubong.pdb
+C:\Users\ACER\Desktop\WebASP.net\Bangaubong\obj\Debug\Bangaubong.csprojAssemblyReference.cache
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\ApplicationInsights.config
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\roslyn\csc.exe
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\roslyn\vbc.exe
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\roslyn\VBCSCompiler.exe
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Bangaubong.dll.config
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Bangaubong.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Bangaubong.pdb
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\EntityFramework.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\EntityFramework.SqlServer.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.AI.Web.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\PagedList.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\PagedList.Mvc.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\System.Web.Helpers.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\System.Web.Mvc.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\System.Web.Razor.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\System.Web.Webpages.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\System.Web.Webpages.Razor.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\EntityFramework.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\EntityFramework.SqlServer.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.AI.Web.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\PagedList.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\PagedList.Mvc.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\System.Web.Razor.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\System.Web.Webpages.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\System.Web.Webpages.Razor.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\System.Web.Helpers.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\bin\System.Web.Mvc.xml
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\obj\Debug\Bangaubong.csprojAssemblyReference.cache
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\obj\Debug\Bangaubong.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\obj\Debug\Bangaubong.csproj.CopyComplete
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\obj\Debug\Bangaubong.dll
+C:\Users\ACER\Desktop\Đào Minh An\WebASP.net\Bangaubong\obj\Debug\Bangaubong.pdb

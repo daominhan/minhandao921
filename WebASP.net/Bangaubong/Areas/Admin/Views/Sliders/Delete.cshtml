@@ -1,0 +1,25 @@
+﻿@model Bangaubong.Models.Mslider
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<section>
+    <div class="container">
+        <h3>Bạn có chắc chắn muốn xóa?</h3>
+        <div>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions ">
+                    <input type="submit" value="Xóa" class="btn btn-danger" /> |
+                    <a class="btn btn-info" href="~/admin/sliders/trash"><i class="fas fa-reply"></i> Thoát</a>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Bangaubong.Models.Mproduct>
+  
+    <div class="row mt-2 mb-2">
+@foreach (var pro in Model)
+{
+        <div class="col-md-3" style="max-width:220px;margin:auto;border:1px solid #dddddd">
+            <div class="product-item pt-3">
+                <div class="hinhsp">
+                    <a href="">
+                        <img src="~/images/product/@pro.Img" style="width: 100%" alt="">
+                    </a>
+                </div>
+                <div class="text-center p-2"> <a href=""> @pro.Name </a> </div>
+                <div class="text-center p-2 text-danger" style="padding: 5px 0 5px 0;"> Giá: @pro.Price</div>
+                <div class="text-center p-2 text-danger" style="padding: 5px 0 5px 0;"> <a href="~/them-sp-giohang?productID=@pro.Id&quantity=1" class="btn btn-info ">Thêsm vào giỏ </a> </div>
+            </div>
+        </div>
+}
+    </div>
+
+
+

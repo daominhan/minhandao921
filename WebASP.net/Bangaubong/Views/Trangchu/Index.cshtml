@@ -1,0 +1,44 @@
+﻿ 
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <!--category--------------------->
+            <div class="col-md-2 p-0    ">
+                <section>
+                    @Html.Action("Listcategory", "Module")
+                </section>
+                @Html.Action("card_header", "Cart")
+
+            </div>
+
+
+            <div class="col-md-10">
+                <!--slideshow---------------->
+     
+                    @Html.Action("SlideShow","Module")
+
+                <!--product------------------>
+           
+                <div class="container pt-3">
+                    @foreach (var cat in Model)
+                    {
+                        
+                        <div class="row justify-content-center" style="margin-top:20px;border-bottom:5px solid #17a2b8">
+                            <h4>@cat.Name</h4>
+                        </div>
+                        @Html.Action("HomeProduct", "Trangchu", new { @catid = cat.Id })
+                    }
+                  
+                </div>
+
+                </div>
+
+
+        </div>
+       </div>
+
+</section>

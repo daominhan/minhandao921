@@ -1,0 +1,243 @@
+﻿
+
+@model Bangaubong.Models.Mpost
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<section class="clearfix">
+    <div class="container-fluid ">
+        <div class="card">
+           
+@using (Html.BeginForm("Edit", "Post", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+    @Html.AntiForgeryToken()
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb m-0 p-0" style="background-color:#f7f7f7">
+                                    <li class="breadcrumb-item"><a href="~/admin">Bảng điều khiển</a></li>
+                                    <li class="breadcrumb-item"><a href="~/admin/post">Quản lý bài viết</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page"><a href="">Sửa bài viết</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="col-md-5 text-right">
+                            <button type="submit" class="btn btn-success btn-sm"><i class="fas fa-save"></i> Lưu lại</button>
+                            <a class="btn btn-danger btn-sm" href="~/admin/post"><i class="fas fa-reply"></i> Thoát</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-horizontal">
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="card-body">
+                        <div class="form-horizontal">
+                            <h4>Chỉnh sửa bài viết</h4>
+                            <hr />
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <div class="col-md">
+                                            <a>Tiêu đề bài viết</a>
+                                            @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <a>Chi tiết bài viết</a>
+                                                </div>
+                                                <div class="row">
+                                                    @Html.TextAreaFor(model => model.Detail, 6, 130, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.Detail, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <a>Từ khóa SEO</a>
+                                                </div>
+                                                <div class="row">
+                                                    @Html.TextAreaFor(model => model.Metakey, 3, 130, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.Metakey, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <a>Mô tả SEO</a>
+                                                </div>
+                                                <div class="row">
+                                                    @Html.TextAreaFor(model => model.Metadesc, 3, 130, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.Metadesc, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="col-md">
+                                            <a>Cấp cha</a>
+                                            @Html.DropDownList("ListTopics", (IEnumerable<SelectListItem>)ViewBag.ListTopics, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.TopId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md">
+                                            @Html.LabelFor(model => model.Img, htmlAttributes: new { @class = "control-label" })
+                                            <input name="fileimg" type="file" />
+                                            @Html.ValidationMessageFor(model => model.Img, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-md">
+                                            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label" })
+                                            @Html.DropDownListFor(model => Model.Status, new[] { new SelectListItem { Text = "Hiện", Value = "1" }, new SelectListItem { Text = "Ẩn", Value = "2" } }, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+@*@using (Html.BeginForm("Edit", "Post", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+    @Html.AntiForgeryToken()
+
+    <div class="card-body">
+        <div class="form-horizontal">
+            <h4>Chỉnh sửa bài viết</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label" })
+                            @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="row">
+
+                        <div class="col-6">
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    <label>Chủ đề mới:</label>
+                                    @Html.DropDownList("ListTopics", (IEnumerable<SelectListItem>)ViewBag.ListTopics, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.TopId, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.LabelFor(model => model.Detail, htmlAttributes: new { @class = "control-label" })
+                            @Html.TextAreaFor(model => model.Detail, 2, 100, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Detail, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.LabelFor(model => model.Metakey, htmlAttributes: new { @class = "control-label" })
+                            @Html.TextAreaFor(model => model.Metakey, 2, 100, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Metakey, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.LabelFor(model => model.Img, htmlAttributes: new { @class = "control-label" })
+                            <input name="fileimg" type="file" />
+                            @Html.ValidationMessageFor(model => model.Img, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.LabelFor(model => model.Metadesc, htmlAttributes: new { @class = "control-label" })
+                            @Html.TextAreaFor(model => model.Metadesc, 2, 100, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Metadesc, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label" })
+                            @Html.DropDownListFor(model => Model.Status, new[] { new SelectListItem { Text = "Hiện", Value = "1" }, new SelectListItem { Text = "Ẩn", Value = "2" } }, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="card-footer">
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <button type="submit" value="Save" class="btn btn-success"><i class="fa fa-save"></i> Save</button>
+                            <button type="reset" value="reset" class="btn btn-warning"><i class="fa fa-refresh"></i> Reset</button>
+                        </div>
+                    </div>
+                </div>
+}
+
+        </div>
+    </div>
+</section>*@
+
+
+

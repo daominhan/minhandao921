@@ -1,0 +1,80 @@
+﻿
+
+
+
+@model IEnumerable<Bangaubong.Models.Mpost>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!--category--------------------->
+        <div class="col-md-2 p-0    ">
+            <section>
+                @Html.Action("Listcategory", "Module")
+            </section>
+            <section>
+                <div class="list-group mt-4 " style="text-align:center">
+                    <p href="#" class="list-group-item list-group-item-action active bg-info">
+                        <a href="#" class="fa fa-cart-plus" style="color:white"></a>
+                        <a href="#" style="color:white"><B> GIỎ HÀNG</B></a><br />
+                        <a>Số sản phẩm:0</a>
+
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-10">
+            <div class="container">
+                <div class="row justify-content-center" style="border-bottom:5px solid #17a2b8">
+                    <h4>TẤT CẢ TIN TỨC</h4>
+
+                </div>
+                <div class="container">
+                    @foreach (var item in Model)
+                    {
+                        <div class="card-body" style="border-bottom: 1px solid #337ab7">
+                         <div class="row">
+                             <h5 href="" class="font-weight-bold " style="color: red">@item.Title</h5><br>
+                         </div>
+                            <div class="row mt-2">
+                                <div class="=col-3">
+                                    <img src="images/product/@item.Img" alt="..." style="width:150px" />
+                                </div>
+                                <div class="=col-9">
+                                    @item.Detail
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    }
+                </div>
+
+            </div>
+            <div class="">
+               
+
+            </div>
+
+            <div class="mt-3">
+                <div class="text-center bg-info col-12"> Bình Luận facebook</div>
+                <div class="fb-comments" data-href="https://www.facebook.com/Shop-g%E1%BA%A5u-b%C3%B4ng-301664267446496/notifications/?section=notifications&amp;subsection=comments" data-width="" data-numposts="5"></div>
+            </div>
+
+        </div>
+
+
+        </section>
+
+    </div>
+
+
+
+
+
+
+

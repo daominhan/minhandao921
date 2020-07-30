@@ -1,0 +1,89 @@
+﻿
+@model IEnumerable<Bangaubong.Models.Mpost>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<section class="clearfix">
+    <div class="container-fluid ">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-7">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb m-0 p-0" style="background-color:#f7f7f7">
+                                <li class="breadcrumb-item"><a href="~/admin">Bảng điều khiển</a></li>
+                                <li class="breadcrumb-item"><a href="~/admin/post">Quản lý bài viết</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="">Thùng rác</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-md-5 text-right">
+                        <a class="btn btn-danger btn-sm" href="~/admin/post"><i class="fas fa-reply"></i> Thoát</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-block">
+                <table class="table table-bordered text-center">
+                    <tr>
+                        <th>
+                            <a>ID</a>
+                        </th>
+                        <th>
+                            <a>Hình</a>
+                        </th>
+                        <th>
+                            <a>Tiêu đề bài viết</a>
+                        </th>
+                        <th>
+                            <a>Loại bài viết</a>
+                        </th>
+
+                        <th>
+                            <a>Ngày đăng</a>
+                        </th>
+
+                        <th>
+                            <a>Chức năng</a>
+                        </th>
+
+
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+                            <td>
+                                <img style="width:140px;height:132px;" src="~/images/product/@item.Img" class="card-img-top img_card" alt="">
+                            </td>
+                            <td class="text-lg-left">
+                                @Html.DisplayFor(modelItem => item.Title)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TopId)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Created_at)
+                            </td>
+
+                            <td class="text-center">
+                                <a class="btn btn-sm btn-info" href="~/admin/post/Retrash/@item.Id"><i class="fas fa-undo-alt"></i> Khôi phục</a>
+                                <a class="btn btn-sm btn-danger" href="~/admin/post/delete/@item.Id"><i class="fas fa-trash-alt"></i> Xóa</a>
+                            </td>
+
+
+                        </tr>
+                    }
+
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+

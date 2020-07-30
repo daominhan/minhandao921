@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+
+<div class="clearfix maincontent">
+    <div class="container">
+        <nav class="breadcrumb">
+            <li class="breadcrumb-item"><a href="~/">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="~/san-pham">Sản phẩm</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+        </nav>
+        <section class="chitiet">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="~/images/product/@Model.Img" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h1 style="color:red">CHI TIẾT SẢN PHẨM</h1>
+                    <h1>@Model.Name</h1>
+                    <h3>Giá: @Model.Price.ToString("#,##0") ₫</h3>
+                    
+                    @Model.Detail
+                    
+                    <form class="form-inline">
+                        <div class="form-inline">
+                            <input type="number" class="form-control mr-1" name="SoLuongSP" value="1" min="1" step="1" />
+
+                            <a href="" class="btn btn-info ">Thêm vào giỏ</a>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="pt-4">
+                <div class="text-center " style="background-color: #337ab7;width:1110px"> Bình Luận facebook</div>
+                <div class="fb-comments" data-href="https://www.facebook.com/Shop-g%E1%BA%A5u-b%C3%B4ng-301664267446496/notifications/?section=notifications&amp;subsection=comments" data-width="" data-numposts="5"></div>
+            </div>
+        </section>
+        
+    </div>
+</div>
+
+
+

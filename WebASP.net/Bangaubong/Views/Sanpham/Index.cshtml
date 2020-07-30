@@ -1,0 +1,65 @@
+﻿
+
+@using PagedList.Mvc
+@model PagedList.IPagedList<Bangaubong.Models.Mproduct>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+<div class="container mt-4">
+    <div class="row">
+        <!--category--------------------->
+        <div class="col-md-2 p-0">
+            <section>
+                @Html.Action("Listcategory", "Module")
+            </section>
+            <section>
+                <div class="list-group mt-4 " style="text-align:center">
+                    <p href="#" class="list-group-item list-group-item-action active bg-info">
+                        <a href="#" class="fa fa-cart-plus" style="color:white"></a>
+                        <a href="#" style="color:white"><B> GIỎ HÀNG</B></a><br />
+                        <a>Số sản phẩm:0</a>
+
+                    </p>
+                </div>
+            </section>
+        </div>
+</div>
+        <section>
+        <div class="col-md-10">
+            <div class="container">
+                <div class="row justify-content-center" style="border-bottom:5px solid #17a2b8">
+                    <h4>TẤT CẢ SẢN PHẨM</h4>
+                </div>
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                            <div class="col-9 col-sm-6 col-md-4 mt-3" style="max-width:220px;margin:auto;border:1px solid #dddddd">
+                                <div class="product-item pt-3">
+                                    <div class="hinhsp">
+                                        <a  href="~/san-pham/@item.CatId/@item.Slug">
+                                            <img src="~/images/product/@item.Img" style="width: 100%" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="text-center p-2"> <a href="~/san-pham/@item.CatId/@item.Slug"> @item.Name </a> </div>
+                                    <div class="text-center p-2 text-danger" style="padding: 5px 0 5px 0;"> Giá: @item.Price.ToString("#,##0") ₫</div>
+                                    <div class="text-center p-2 text-danger" style="padding: 5px 0 5px 0;"> <a href="" class="btn btn-info ">Thêm vào giỏ </a> </div>
+                                </div>
+                            </div>
+                    }
+                    <div>
+
+                    </div>
+                </div>
+                </div>
+
+    </div>
+    
+        <div class="">
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+
+        </div>
+
+    </section>
+      
+</div>

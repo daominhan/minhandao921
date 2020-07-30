@@ -1,0 +1,112 @@
+﻿
+
+@model Bangaubong.Models.Mtopic
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<section class="clearfix">
+    <div class="container-fluid ">
+        <div class="card">
+            @using (Html.BeginForm("Create", "Topic", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb m-0 p-0" style="background-color:#f7f7f7">
+                                    <li class="breadcrumb-item"><a href="~/admin">Bảng điều khiển</a></li>
+                                    <li class="breadcrumb-item"><a href="~/admin/topic">Quản lý chủ đề bài viết</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page"><a href="">Thêm chủ đề bài viết</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="col-md-5 text-right">
+                            <button type="submit" class="btn btn-success btn-sm"><i class="fas fa-save"></i> Lưu lại</button>
+                            <a class="btn btn-danger btn-sm" href="~/admin/topic"><i class="fas fa-reply"></i> Thoát</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-horizontal">
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="card-body">
+                        <div class="form-horizontal">
+                            <h4>Tạo mới chủ đề bài viết</h4>
+                            <hr />
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="row">
+                                <div class="col-md-9">
+
+                                    <div class="form-group">
+                                        <div class="col-md">
+                                            <a>Chủ đề bài viết</a>
+                                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <a>Từ khóa SEO</a>
+                                                </div>
+                                                <div class="row">
+                                                    @Html.TextAreaFor(model => model.Metakey, 3, 130, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.Metakey, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <a>Mô tả SEO</a>
+                                                </div>
+                                                <div class="row">
+                                                    @Html.TextAreaFor(model => model.Metadesc, 3, 130, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.Metadesc, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="col-md">
+                                            <a>Loại bài viết</a>
+                                            @Html.DropDownList("ListParentTopic", (IEnumerable<SelectListItem>)ViewBag.ListTopic, "-- Choose --", new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.ParentId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md">
+                                            <a>Trạng thái</a>
+                                            @Html.DropDownListFor(model => Model.Status, new[] { new SelectListItem { Text = "Hiện", Value = "1" }, new SelectListItem { Text = "Ẩn", Value = "2" } }, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+

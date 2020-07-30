@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Bangaubong.Models.Mslider>
+<section class="clearfix p-0">
+
+    <div id="demo" class="carousel slide" data-ride="carousel"> 
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            @{ int dem = 1;}
+            @foreach (var item in Model)
+            {
+                if (dem == 1)
+                {
+                    <div class="carousel-item active">
+                        <img src="images/slider/@item.Img" alt="slideshow">
+                    </div>
+                }
+                else
+                {
+                    <div class="carousel-item">
+                        <img src="images/slider/@item.Img" alt="slideshow">
+                    </div>
+                }
+                dem++;
+            }
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+
+
+</section>

@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Giới thiệu";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+
+}
+
+
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!--category--------------------->
+        <div class="col-md-2 p-0    ">
+            <section>
+                @Html.Action("Listcategory", "Module")
+            </section>
+            <section>
+                <div class="list-group mt-4 " style="text-align:center">
+                    <p href="#" class="list-group-item list-group-item-action active bg-info">
+                        <a href="#" class="fa fa-cart-plus" style="color:white"></a>
+                        <a href="#" style="color:white"><B> GIỎ HÀNG</B></a><br />
+                        <a>Số sản phẩm:0</a>
+
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-10">
+            <div class="container ">
+                <div class="row justify-content-center" style="border-bottom:5px solid #17a2b8">
+                    <h4>GIỚI THIỆU VỀ WEBSITE</h4>
+                    
+                </div>
+                <div class="row mt-3">
+                    <h6 >
+                        Gấu bông - Món quà chỉ cần nhìn thấy chúng đối phương đã hiểu được thông điệp mà bạn muốn gửi gắm đến họ. Tuy nhiên làm thế nào để đốn tim bạn gái thì không phải ai cũng làm được. Cùng tham khảo bài viết của shop và trở thành chuyên gia tình yêu nhé nhé.
+                        Shop chuyên cung cấp gấu bông các loại, nhiều mẫu đẹp cho các bạn lựa chọn. Nếu có thời gian rảnh hãy ghé qua shop nhé.
+                    </h6>
+                </div>
+
+            </div>
+            <div class="mt-3">
+                <div class="text-center bg-info col-12"> Bình Luận facebook</div>
+                <div class="fb-comments" data-href="https://www.facebook.com/Shop-g%E1%BA%A5u-b%C3%B4ng-301664267446496/notifications/?section=notifications&amp;subsection=comments" data-width="" data-numposts="5"></div>
+            </div>
+
+        </div>
+
+
+        </section>
+
+    </div>
+
+
+
+
+
+
+

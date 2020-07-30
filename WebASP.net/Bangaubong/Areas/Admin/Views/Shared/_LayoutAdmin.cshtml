@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/scripts/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <a class="navbar-brand" href="">Trang Quản Trị</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sản phẩm
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="~/admin/product">Danh sách sản phẩm</a>
+                            <a class="dropdown-item" href="~/admin/product/create">Thêm sản phẩm</a>
+                            <a class="dropdown-item" href="~/admin/category">Loại sản phẩm</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Giao Diện
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="nav-link text-dark" href="~/admin/menus">Menu</a>
+                            <a class="nav-link text-dark" href="~/admin/sliders">Slider</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Bài viết
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="~/admin/post">Tất cả bài viết</a>
+                            <a class="dropdown-item" href="~/admin/post/create">Thêm bài viết</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="~/Admin/topic">Chủ đề bài viết</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="~/admin/users">User</a>
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="~/admin/contact">Liên hệ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="">Đơn hàng</a>
+                    </li>
+                   
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a href="#" style="color:white;"><i class="fas fa-user"></i></a>
+                    <a class="text-light mx-2" href="~/admin/auth/logout"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
+
+                </form>
+            </div>
+        </nav>
+    </section>
+    <div>
+        @RenderBody()
+    </div>
+    <section class="clearfix footer border-top py-2 bg-secondary">
+        <div class="container-fluid text-light text-center">
+            Thiết kế bởi: Đào Minh An
+        </div>
+    </section>
+</body>
+</html>

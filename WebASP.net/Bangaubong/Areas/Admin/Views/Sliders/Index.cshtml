@@ -1,0 +1,85 @@
+﻿
+@model IEnumerable<Bangaubong.Models.Mslider>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<section class="clearfix">
+    <div class="container-fluid ">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-7">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb m-0 p-0" style="background-color:#f7f7f7">
+                                <li class="breadcrumb-item"><a href="~/admin">Bảng điều khiển</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="">Slider</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-md-5 text-right">
+                        <a class="btn btn-primary btn-sm" href="~/Admin/sliders/Create"><i class="fas fa-plus"></i> Thêm mới</a>
+                        <a class="btn btn-danger btn-sm" href="~/Admin/sliders/Trash"><i class="fas fa-trash-alt"></i>Thùng rác</a>
+                    </div>a
+                </div>
+
+            </div>
+            <div class="card-block">
+                <table class="table table-bordered text-center">
+                    <tr>
+                        <th>
+                            <a>ID</a>
+                        </th>
+                        <th>
+                            <a>Hình</a>
+                        </th>
+                        <th>
+                            <a>Tên Slideshow</a>
+                        </th>
+                        <th>
+                            <a>Ngày đăng</a>
+                        </th>
+
+                        <th>
+                            <a>Chức năng</a>
+                        </th>
+
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+                            <td>
+                                <img style="width:200px" src="../images/slider/@item.Img" class="card-img-top img_card" alt="">
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Created_at)
+                            </td>
+
+                            <td class="text-center">
+                                <a href="~/admin/sliders/status/@item.Id">
+                                    @Html.Action("ShowStatus", "sliders", new { @id = item.Id })
+                                </a>
+
+                                <a class="btn btn-sm btn-success" href="~/admin/sliders/Edit/@item.Id"><i class="far fa-edit"></i> Sửa</a>
+                                <a class="btn btn-sm btn-danger" href="~/admin/sliders/Deltrash/@item.Id"><i class="fas fa-trash-alt"></i> Xóa</a>
+                            </td>
+
+                        </tr>
+                    }
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+</section>
+

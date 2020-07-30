@@ -1,0 +1,95 @@
+﻿
+@model IEnumerable<Bangaubong.Models.Mproduct>
+
+@{
+    ViewBag.Title = "Trash";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<section class="clearfix">
+    <div class="container-fluid ">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-7">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb m-0 p-0" style="background-color:#f7f7f7">
+                                <li class="breadcrumb-item"><a href="~/admin">Bảng điều khiển</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="">Danh sách sản phẩm</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-md-5 text-right">
+                        
+                        <a class="btn btn-danger btn-sm" href="~/admin/product"><i class="fas fa-reply"></i> Thoát</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-block">
+                <table class="table table-bordered text-center">
+                    <tr>
+                        <th>
+                            <a>Hình</a>
+                        </th>
+                        <th>
+                            <a>Tên sản phẩm</a>
+                        </th>
+                        <th>
+                            <a>Loại sản phẩm</a>
+                        </th>
+                        <th>
+                            <a>Giá</a>
+                        </th>
+                        <th>
+                            <a>Ngày đăng</a>
+                        </th>
+
+                        <th>
+                            <a>Chức năng</a>
+                        </th>
+                        <th>
+                            <a>ID</a>
+                        </th>
+
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <img style="width:115px;height:132px;" src="~/images/product/@item.Img" class="card-img-top img_card" alt="">
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CatId)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Price) vnđ
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Created_at)
+                            </td>
+
+                     
+                            <td class="text-center">
+                                <a class="btn btn-sm btn-info" href="~/admin/product/Retrash/@item.Id"><i class="fas fa-undo-alt"></i> Khôi phục</a>
+                                <a class="btn btn-sm btn-danger" href="~/admin/product/delete/@item.Id"><i class="fas fa-trash-alt"></i> Xóa</a>
+                            </td>
+                           
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+
+                        </tr>
+                    }
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+</section>
+

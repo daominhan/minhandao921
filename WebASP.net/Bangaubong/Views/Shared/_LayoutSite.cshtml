@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/scripts/bootstrap.js"></script>
+    <script src="~/scripts/jquery-3.0.0.slim.min.js"></script>
+    <script src="~/scripts/popper.min.js"></script>
+    <link href="~/Content/Style1.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=539781922737431&autoLogAppEvents=1"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!--header------------------------------------------->
+    <section class="clearfix header" style="margin-bottom:20px">
+        @Html.Partial("_Header")
+    </section>
+
+
+    <!--mainmenu----------------------------------------->
+    <section class="bg-info" style="position: sticky;top: 0;z-index: 1071;">
+        @Html.Action("MainMenu","Module")
+    </section>
+   
+
+     <!--body-------------------------------------------->
+    <div>
+        @RenderBody()
+    </div>
+   
+
+     <!--footer------------------------------------------>
+    <section class="clearfix footer bg-info mt-3" style="padding:30px;color:white" >
+        @Html.Partial("_Footer")
+    </section>
+</body>
+</html>

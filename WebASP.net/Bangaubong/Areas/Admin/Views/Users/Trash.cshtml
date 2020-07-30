@@ -1,0 +1,104 @@
+﻿
+@model IEnumerable<Bangaubong.Models.Muser>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<section class="clearfix">
+    <div class="container-fluid ">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-7">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb m-0 p-0" style="background-color:#f7f7f7">
+                                <li class="breadcrumb-item"><a href="~/admin">Bảng điều khiển</a></li>
+                                <li class="breadcrumb-item"><a href="~/admin/users">Users</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="">Thùng rác</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-md-5 text-right">
+                        <a class="btn btn-danger btn-sm" href="~/admin/users"><i class="fas fa-reply"></i> Thoát</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-block">
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr class="bg-light text-dark">
+                            <th class="text-center">
+                                <a>ID</a>
+                            </th>
+                            <th class="text-center">
+                                <a>Họ và tên</a>
+                            </th>
+                            <th class="text-center">
+                                <a>Tên đăng nhập</a>
+                            </th>
+
+                            <th class="text-center">
+                                <a>Giới tính</a>
+                            </th>
+                            <th class="text-center">
+                                <a>SĐT</a>
+                            </th>
+                            <th class="text-center">
+                                <a>Email</a>
+                            </th>
+
+
+                            <th class="text-center">
+                                <a>Chức năng</a>
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="text-center">
+                                    @Html.DisplayFor(modelItem => item.Id)
+                                </td>
+
+                                <td class="text-center">
+                                    @Html.DisplayFor(modelItem => item.FullName)
+                                </td>
+                                <td class="text-center">
+                                    @Html.DisplayFor(modelItem => item.UserName)
+                                </td>
+
+                                <td class="text-center">
+                                    <a href="~/admin/user/@item.Id">
+                                        @Html.Action("ShowGender", "Users", new { @id = item.Id })
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    @Html.DisplayFor(modelItem => item.Phone)
+                                </td>
+                                <td class="text-center">
+                                    @Html.DisplayFor(modelItem => item.Email)
+                                </td>
+
+
+                                <td class="text-center">
+                                    <a class="btn btn-sm btn-info" href="~/admin/users/Retrash/@item.Id"><i class="fas fa-undo-alt"></i> Khôi phục</a>
+                                    <a class="btn btn-sm btn-danger" href="~/admin/users/delete/@item.Id"><i class="fas fa-trash-alt"></i> Xóa</a>
+
+
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+</section>
+

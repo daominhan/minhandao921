@@ -1,0 +1,25 @@
+﻿@model Bangaubong.Models.Muser
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLogin.cshtml";
+}
+
+@using (Html.BeginForm("Login", "Auth", FormMethod.Post))
+{
+    <h2 class="text-center text-danger text-uppercase">Đăng Nhập Hệ Thống</h2>
+    <fieldset class="form-group">
+        <label formGroupExampleInput>Tên Đăng Nhập</label>
+        @Html.TextBoxFor(model => model.UserName, null, new { @class = "form-control" })
+    </fieldset>
+    <fieldset class="form-group">
+        <label formGroupExampleInput>Mật Khẩu</label>
+        @Html.TextBoxFor(model => model.Password, null, new { @class = "form-control",@type ="password" })
+    </fieldset>
+    <fieldset class="form-group">
+        <button type="submit" class="btn btn-success px-5">Đăng Nhập</button>
+    </fieldset>
+    <fieldset class="form-group">
+        @ViewBag.Message
+    </fieldset>
+}
+
